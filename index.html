@@ -9,6 +9,14 @@
 
 <h1>幕末海戦シミュレーション</h1>
 
+<h2>ガチャ</h2>
+<button onclick="drawGacha()">10連ガチャ（初回のみ）</button>
+<div id="gachaResult"></div>
+
+<h2>所持艦</h2>
+<div id="ownedShips"></div>
+
+<h2>マップ</h2>
 <div id="map"></div>
 
 <h2>味方艦隊</h2>
@@ -18,8 +26,6 @@
 <div id="enemyFleet"></div>
 
 <button onclick="playerAttack()">攻撃</button>
-
-<div id="log"></div>
 
 <script src="script.js"></script>
 </body>

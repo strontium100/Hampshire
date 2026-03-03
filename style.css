@@ -1,0 +1,36 @@
+body {
+  background: #0b1c2d;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+#map button {
+  margin: 5px;
+  padding: 10px;
+}
+
+.shipCard {
+  width: 180px;
+  background: #1b2a38;
+  display: inline-block;
+  margin: 10px;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.shipImage {
+  width: 100%;
+  height: auto;
+}
+
+.hpBar {
+  height: 15px;
+  background: red;
+  margin-top: 5px;
+  transition: width 0.5s;
+}
+
+.SSR {
+  border: 2px solid gold;
+}

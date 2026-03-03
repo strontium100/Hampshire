@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<h1>幕末海戦シミュレーション</h1>
+<h1>戊辰戦争</h1>
 
 <h2>ガチャ</h2>
 <button onclick="drawGacha()">10連ガチャ（初回のみ）</button>
@@ -30,3 +30,21 @@
 <script src="script.js"></script>
 </body>
 </html>
+
+<h2>海戦</h2>
+
+<div class="battleField">
+
+  <div>
+    <h3>味方艦隊</h3>
+    <div id="playerFleet"></div>
+  </div>
+
+  <div>
+    <h3>敵艦隊</h3>
+    <div id="enemyFleet"></div>
+  </div>
+
+</div>
+
+<button onclick="playerAttack()">攻撃</button>

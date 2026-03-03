@@ -1,13 +1,8 @@
 body {
   background: #0b1c2d;
   color: white;
-  font-family: sans-serif;
   text-align: center;
-}
-
-#map button {
-  margin: 5px;
-  padding: 10px;
+  font-family: sans-serif;
 }
 
 .shipCard {
@@ -19,9 +14,32 @@ body {
   border-radius: 10px;
 }
 
+/* レア度枠 */
+.N { border: 2px solid gray; }
+
+.R {
+  border: 2px solid deepskyblue;
+  box-shadow: 0 0 8px deepskyblue;
+}
+
+.SR {
+  border: 2px solid violet;
+  box-shadow: 0 0 12px violet;
+}
+
+.SSR {
+  border: 3px solid gold;
+  box-shadow: 0 0 20px gold;
+  animation: ssrGlow 1.5s infinite alternate;
+}
+
+@keyframes ssrGlow {
+  from { box-shadow: 0 0 10px gold; }
+  to { box-shadow: 0 0 25px orange; }
+}
+
 .shipImage {
   width: 100%;
-  height: auto;
 }
 
 .hpBar {
@@ -31,6 +49,13 @@ body {
   transition: width 0.5s;
 }
 
-.SSR {
-  border: 2px solid gold;
+.resultCard {
+  display: inline-block;
+  margin: 10px;
+  transform: scale(0);
+  animation: appear 0.5s forwards;
+}
+
+@keyframes appear {
+  to { transform: scale(1); }
 }

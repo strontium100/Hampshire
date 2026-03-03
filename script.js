@@ -14,7 +14,7 @@ let gachaUsed = false;
 
 // ===== 全艦データ（画像挿入部あり）=====
 const allShips = [
- {name:"翔凰丸", hp:35, attack:7, rarity:"N", image:"images/shouhoumaru.png"}, // 画像挿入部
+ {name:"翔凰丸", hp:35, attack:7, rarity:"N", image:"images/shouhoumaru.png"}, 
  {name:"乾行", hp:42, attack:9, rarity:"SR", image:"images/kenkou.png"},
  {name:"昇平丸", hp:30, attack:6, rarity:"N", image:"images/shouheimaru.png"},
  {name:"春日丸", hp:48, attack:11, rarity:"SSR", image:"images/kasugamaru.png"},

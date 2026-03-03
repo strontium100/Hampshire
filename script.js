@@ -110,20 +110,27 @@ function startBattle(area){
 }
 
 // ===== 表示 =====
-function renderFleet(fleet,id){
+function renderFleet(fleet, elementId){
+
  let html="";
+
  fleet.forEach(ship=>{
+
    let hpPercent=(ship.hp/ship.maxHp)*100;
+
    html+=`
    <div class="shipCard ${ship.rarity||''}">
-    <img src="${ship.image}" class="shipImage">
-    <div>${ship.name}</div>
-    <div class="hpBar" style="width:${hpPercent}%"></div>
-   </div>`;
- });
- document.getElementById(id).innerHTML=html;
-}
+     <img src="${ship.image}" class="shipImage">  <!-- 画像表示部 -->
+     <div>${ship.name}</div>
+     <div>${ship.hp} / ${ship.maxHp}</div>
+     <div class="hpBar" style="width:${hpPercent}%"></div>
+   </div>
+   `;
 
+ });
+
+ document.getElementById(elementId).innerHTML=html;
+}
 function renderAll(){
  renderFleet(playerFleet,"playerFleet");
  renderFleet(enemyFleet,"enemyFleet");
